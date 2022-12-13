@@ -1,6 +1,27 @@
 <template>
-  <div id="app">
+  <div id="app" :class="colorMode">
     <NavBar />
+    <!-- to toggle theme -->
+    <div class="lightButton">
+      <transition name="appear">
+        <img
+          v-if="isDark"
+          @click="changeColor()"
+          src="img/navItens/button-moon.png"
+          alt="icon-moon"
+          height="40"
+        />
+      </transition>
+      <transition name="appear">
+        <img
+          v-if="!isDark"
+          @click="changeColor()"
+          src="img/navItens/button-sun.png"
+          alt="icon-sun"
+          height="40"
+        />
+      </transition>
+    </div>
     <PortalHeader numberArea="25" nameArea="Parque Vitória do Sol Nascente" />
     <div>
       <router-view class="content" />
@@ -23,15 +44,17 @@ export default {
   },
   data() {
     return {
-      news: true,
-      history: 'false',
-      maps: 'false',
-      environment: 'false',
-      blueprints: 'false',
-      services: 'false',
-      faq: 'false',
-      clicou: () => {
-        alert('wahoo')
+      isDark: false,
+      colorMode: ''
+    }
+  },
+  methods: {
+    changeColor() {
+      this.isDark = !this.isDark
+      if (this.isDark) {
+        return (this.colorMode = 'dark')
+      } else {
+        return (this.colorMode = '')
       }
     }
   }
@@ -79,6 +102,32 @@ export default {
     rgba(166, 172, 127, 0.8) 100%
   );
 }
+
+//ColorMode button
+.lightButton img {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0.5rem;
+  margin: 0.2rem;
+}
+//animation
+.appear-enter-active,
+.appear-leave-active {
+  transition: transform 0.3s, opacity 0.5s;
+}
+.appear-leave-to,
+.appear-enter {
+  transform: scale(0);
+  opacity: 0;
+}
+.appear-leave,
+.appear-enter-to {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .content {
   width: 100%;
   display: inline-flex;
