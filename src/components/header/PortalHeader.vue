@@ -61,6 +61,7 @@ h2 {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
 @media only screen and (max-width: 728px) {
   .mobileHidden {
     display: none;
@@ -68,9 +69,20 @@ h2 {
   .header {
     margin-top: 3rem;
   }
+  h1 {
+    border-radius: 30px;
+    font-size: 1.8rem;
+    padding: 0.25rem 0.75rem;
+  }
+  h2 {
+    padding: 0 1.5rem;
+    font-size: 1.35rem;
+  }
   .areaInfo {
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 </style>
