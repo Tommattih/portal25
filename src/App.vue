@@ -71,7 +71,6 @@ export default {
 
 :root {
   // --bg-color: #606639;
-  // --font-color2: #262b05;
 
   // bg navbar/h1/h2/h3
   --bg-titles: #83895d;
@@ -116,7 +115,6 @@ export default {
 
 .dark {
   // bg navbar/h1/h2/h3
-  --bg-titles: #00447c;
   --bg-titles: #032e42;
 
   // text navbar, h1, h2, h3
@@ -126,7 +124,7 @@ export default {
   --bg-subject: #335c4f5c;
   --border-sub: #8886;
 
-  --select-route: #00000066;
+  --select-route: #064c85;
 
   --bg-body-base: #0e2038da;
   --bg-body: linear-gradient(
@@ -269,6 +267,9 @@ nav {
   flex-direction: column;
   margin-bottom: 0.5rem;
   padding: 0 0.25rem;
+}
+.boxContent p {
+  padding: 0.25rem;
 }
 
 @media only screen and (max-width: 768px) {

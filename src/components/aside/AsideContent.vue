@@ -119,7 +119,7 @@ h5 {
   justify-content: center;
 }
 .dark ul li img {
-  filter: invert(0.8);
+  filter: invert(0.9);
 }
 ul {
   flex-direction: column;
