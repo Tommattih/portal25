@@ -55,6 +55,6 @@ export default {
 img {
   max-width: 100%;
   margin: 0 1rem 1rem;
-  box-shadow: -1px 2px 4px rgba(45, 61, 37, 0.52);
+  box-shadow: var(--shadow-button);
 }
 </style>

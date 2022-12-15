@@ -55,6 +55,6 @@ export default {
 <style scoped>
 img {
   width: 20%;
-  border: solid 3px rgb(123, 255, 0);
+  border: var(--border-dashed); /* faz nada sem img, kill*/
 }
 </style>

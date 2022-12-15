@@ -20,6 +20,7 @@
 export default {
   name: 'modelContent'
 }
+//fix or kill
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MapDirections class="boxContent" />
+    <MapDirections />
     <AsideContent imgSrc="/img/asideIcons/ico-maps-page.png" />
   </div>
 </template>

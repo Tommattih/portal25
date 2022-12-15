@@ -73,6 +73,6 @@ export default {
 img {
   width: 95%;
   margin: 0 auto 1rem;
-  box-shadow: -1px 2px 4px rgba(45, 61, 37, 0.52);
-}
+  box-shadow: var(--shadow-main);
+} /* CHECK IMG REPEATS */
 </style>

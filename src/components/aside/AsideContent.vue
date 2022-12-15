@@ -4,7 +4,7 @@
       <img :src="imgSrc" alt="medal-pvsn" />
     </div>
     <div id="socialMedia" class="row">
-      <h4 class="mobileHidden">Mídias Sociais</h4>
+      <h5 class="mobileHidden">Mídias Sociais</h5>
       <ul class="d-flex">
         <li>
           <a :href="linkDiscordServer" target="_blank">
@@ -41,7 +41,7 @@
       </ul>
     </div>
     <div id="otherLinks" class="row">
-      <h4 class="mobileHidden">Links Úteis</h4>
+      <h5 class="mobileHidden">Links Úteis</h5>
       <ul>
         <li>
           <!-- <a v-bind:href="suaVariavelAqui" -->
@@ -63,7 +63,7 @@
       </ul>
     </div>
     <div id="aboutProject" class="row px-2 mobileHidden">
-      <h4>Sobre o Projeto</h4>
+      <h5>Sobre o Projeto</h5>
       <p>
         O Portal foi criado para atender a falta de uma fonte de informações
         claras e objetivas sobre a 25ª área, uma iniciativa para melhorar a
@@ -71,7 +71,7 @@
       </p>
     </div>
     <div id="aboutDev" class="row px-2 mb-2 mobileHidden">
-      <h4>Sobre o Dev</h4>
+      <h5>Sobre o Dev</h5>
       <p>
         Aquele que encontrou na programação uma forma diferente de ver a vida e
         trazer acessibilidade a informação.
@@ -109,10 +109,9 @@ export default {
 /******* full view ********/
 .imgRender img {
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
 }
-h4 {
-  font-size: 1.25rem;
+h5 {
   text-decoration-line: underline;
   text-underline-offset: 4px;
   margin: 0 auto 0.5rem;
@@ -120,12 +119,12 @@ h4 {
 .asideBox {
   padding: 0.5rem 0;
   max-width: 18%;
-  background: rgba(177, 198, 139, 0.2);
-  box-shadow: -2px 10px 10px 0 rgb(50 75 25 / 50%);
+  background: var(--bg-subject);
+  box-shadow: var(--shadow-main);
   /* backdrop-filter: blur(1.5px); */
   /* -webkit-backdrop-filter: blur(1.5px); */
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.75);
+  border: var(--border-glass);
   justify-content: center;
 }
 ul {
@@ -152,8 +151,8 @@ a:hover {
 li:hover {
   border-radius: 0.5rem;
   filter: brightness(1.2);
-  background: #9daf7145;
-  box-shadow: -1px 2px 4px rgba(45, 61, 37, 0.52);
+  background: var(--bg-hover);
+  box-shadow: var(--shadow-button);
 }
 #aboutDev img {
   width: 5rem;

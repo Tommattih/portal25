@@ -57,10 +57,10 @@ export default {
 </script>
 <style scoped>
 a.nav-link:hover {
-  color: var(--font-color1);
+  color: var(--txt-hover);
 }
 .bg-color {
-  background-color: var(--bg-color);
+  background-color: var(--bg-titles);
   z-index: 10;
   position: fixed;
   top: 0;

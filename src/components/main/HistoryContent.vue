@@ -80,7 +80,7 @@ export default {
 img {
   width: 50%;
   padding: 1rem;
-  border: solid 2px yellow;
+  border: var(--border-mobile);
 }
 </style>
 "

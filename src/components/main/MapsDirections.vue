@@ -1,7 +1,7 @@
 <template>
   <div id="maps">
-    <div class="">
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.8994050230262!2d-46.778048990577396!3d-23.4400447481186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefcf9ff046bed%3A0xbba599a8eb55ab4!2sAlameda%20Aristotenes%20Claudio%20Sbrigh%2C%20923%20-%20Vila%20Jaragu%C3%A1%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005282-000!5e1!3m2!1spt-BR!2sbr!4v1622959672281!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+    <div class="boxContent">
+      <!--<embed??> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.8994050230262!2d-46.778048990577396!3d-23.4400447481186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefcf9ff046bed%3A0xbba599a8eb55ab4!2sAlameda%20Aristotenes%20Claudio%20Sbrigh%2C%20923%20-%20Vila%20Jaragu%C3%A1%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005282-000!5e1!3m2!1spt-BR!2sbr!4v1622959672281!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
       <h3>Como Chegar</h3>
       <div>
         <img
@@ -12,15 +12,18 @@
         />
         <img v-else @click="changeMap()" :src="mapSat" alt="map-top-satelite" />
       </div>
-      <h5>Pontos de referência</h5>
+    </div>
+    <div class="boxContent">
+      <h4>Pontos de referência</h4>
       <p>SP-021, Rodoanel Mario Covas</p>
       <p>Cemitério do Jaraguá</p>
       <p>BR-050, Parque São Domingos</p>
       <p>KM-24, Rodovia Anhanguera</p>
       <p>Nas proximidades do Pico do Jaraguá</p>
       <p>Terminal Jardim Britânia</p>
-
-      <h5>Transporte Público</h5>
+    </div>
+    <div class="boxContent">
+      <h4>Transporte Público</h4>
       <p>
         Se você não tem carro, não tem problema, também é possível chegar de
         ônibus.
@@ -102,21 +105,21 @@
         >.
       </p>
     </div>
-    <!-- outro modo -->
-    <!-- <div class="">
+  </div>
+  <!-- outro modo / USE OR KILL -->
+  <!-- <div class="">
       <h3>{{ titleMap }}</h3>
       <a :href="googleMaps">
         <img :src="mapSat" alt="" />
         <img :src="mapDraw" alt="" />
       </a>
-      <h5>Pontos de Referencia de Carro U+1F698</h5>
+      <h4>Pontos de Referencia de Carro U+1F698</h4>
       <p v-for="refpoint in nearby" :key="refpoint.id">
         {{ refpoint.refPoints }}
       </p>
-      <h5>Pontos de Referencia de Ônibus U+1F68D</h5>
+      <h4>Pontos de Referencia de Ônibus U+1F68D</h4>
       <p>...</p>
     </div> -->
-  </div>
 </template>
 
 <script>
@@ -148,12 +151,9 @@ export default {
 }
 </script>
 <style scoped>
+/* REUSE IN APP??? */
 img {
   width: 100%;
-  padding-bottom: 1rem;
-}
-h5 {
-  background: #ccc;
-  padding: 0.25rem 0;
+  padding-bottom: 0.5rem;
 }
 </style>

@@ -33,17 +33,15 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 img.logoHeader {
   width: 6rem;
 }
 h1,
 h2 {
-  background-color: var(--bg-color);
-  color: var(--font-color);
   width: fit-content;
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
 }
 h1 {
   -webkit-border-radius: 30px;
@@ -75,7 +73,7 @@ h2 {
     padding: 0.25rem 0.75rem;
   }
   h2 {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0.25rem;
     font-size: 1.35rem;
   }
   .areaInfo {
