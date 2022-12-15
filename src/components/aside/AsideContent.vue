@@ -8,7 +8,7 @@
       <ul class="d-flex">
         <li>
           <a :href="linkDiscordServer" target="_blank">
-            <img src="/img/socialMedia/discordBorderBlack.svg" alt="" /><span
+            <img src="/img/asideLinks/discord.png" alt="" /><span
               class="mobileHidden"
               >Discord</span
             >
@@ -16,7 +16,7 @@
         </li>
         <li>
           <a :href="linkInstagram" target="_blank">
-            <img src="/img/socialMedia/instagramBorderBlack.svg" alt="" /><span
+            <img src="/img/asideLinks/instagram.png" alt="" /><span
               class="mobileHidden"
               >Instagram</span
             >
@@ -24,7 +24,7 @@
         </li>
         <li>
           <a :href="linkFacebook" target="_blank">
-            <img src="/img/socialMedia/facebookBorderBlack.svg" alt="" /><span
+            <img src="/img/asideLinks/facebook.png" alt="" /><span
               class="mobileHidden"
               >Facebook</span
             >
@@ -33,7 +33,7 @@
         <li>
           <a :href="linkWhatsappGroup" target="_blank">
             <img
-              src="/img/socialMedia/whatsappBorderBlack.svg"
+              src="/img/asideLinks/whatsapp.png"
               alt="Logo do Whatsapp para o Grupo Geral da área"
             /><span class="mobileHidden">Whatsapp</span>
           </a>
@@ -41,22 +41,13 @@
       </ul>
     </div>
     <div id="otherLinks" class="row">
-      <h5 class="mobileHidden">Links Úteis</h5>
+      <h5 class="mobileHidden">Utilidades</h5>
       <ul>
         <li>
-          <!-- <a v-bind:href="suaVariavelAqui" -->
-          <a :href="linkDWG" target="_blank"
-            ><img src="/img/otherLinks/ico-dwg.png" alt="" /><span
-              class="mobileHidden"
-              >DWG</span
-            ></a
-          >
-        </li>
-        <li>
           <a :href="linkBase" target="_blank"
-            ><img src="/img/otherLinks/ico-base.png" alt="" /><span
+            ><img src="/img/asideLinks/notes.png" alt="" /><span
               class="mobileHidden"
-              >Base</span
+              >Ba$e</span
             ></a
           >
         </li>
@@ -127,6 +118,9 @@ h5 {
   border: var(--border-glass);
   justify-content: center;
 }
+.dark ul li img {
+  filter: invert(0.8);
+}
 ul {
   flex-direction: column;
   flex-wrap: nowrap;
@@ -169,9 +163,21 @@ p {
     margin-bottom: 0;
     gap: 0;
   }
+  ul li img {
+    height: 1.75rem;
+    margin: 0.5rem 0;
+  }
   #socialMedia li {
     margin-bottom: 0;
     padding: 0;
+  }
+  .asideBox li {
+    transition: 0.25s;
+  }
+  .asideBox li:hover {
+    border-radius: 1rem;
+    filter: brightness(1);
+    margin: -0.25rem;
   }
 }
 </style>

@@ -116,8 +116,8 @@ export default {
 
 .dark {
   // bg navbar/h1/h2/h3
-  //--bg-titles: #343819;
   --bg-titles: #00447c;
+  --bg-titles: #032e42;
 
   // text navbar, h1, h2, h3
   --txt-titles: #bbd1e4;
