@@ -67,7 +67,7 @@
         Aquele que encontrou na programação uma forma diferente de ver a vida e
         trazer acessibilidade a informação.
       </p>
-      <img src="/img/asideIcons/ico-tommattih.png" alt="" />
+      <img src="/img/asideIcons/ico-tommattih.png" alt="Tommattih icon" />
       <a :href="linkTommattih" target="_blank">Saiba mais</a>
     </div>
   </div>
@@ -112,8 +112,6 @@ h5 {
   max-width: 18%;
   background: var(--bg-subject);
   box-shadow: var(--shadow-main);
-  /* backdrop-filter: blur(1.5px); */
-  /* -webkit-backdrop-filter: blur(1.5px); */
   border-radius: 10px;
   border: var(--border-glass);
   justify-content: center;
@@ -138,8 +136,7 @@ ul li img {
 a,
 a:hover {
   font-size: 1.1rem;
-  color: var(--font-color2);
-  text-shadow: 0px 0px 6px var(--font-color);
+  color: var(--txt-color);
 }
 #aboutDev a:hover,
 li:hover {
