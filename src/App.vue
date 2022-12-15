@@ -220,8 +220,9 @@ h4 {
 
 h4 {
   background-color: var(--bg-subject);
-  font-size: 0.25rem; /* nao pega pq?*/
+  font-size: 1.25rem;
 }
+
 h1,
 .bg-color,
 .header,
