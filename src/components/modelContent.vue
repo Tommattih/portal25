@@ -24,6 +24,14 @@ export default {
 </script>
 
 <style scoped>
+.card-body {
+  background: var(--bg-main-content);
+}
+.card {
+  border: var(--border-double);
+  box-shadow: var(--shadow-button);
+}
+
 h5 {
   background: green;
 }
